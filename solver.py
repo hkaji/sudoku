@@ -1,3 +1,6 @@
+#
+# python 3.7以上で動く
+# 
 from __future__ import annotations
 from pprint import pformat
 from typing import List, Set, Tuple
@@ -26,9 +29,7 @@ def main():
 
 class Grid:
     """数独のクイズを表すグリッド"""
-
     _values: List[List[int]]
-
     def __init__(self, values: List[List[int]]):
         assert isinstance(values, list)
         assert len(values) == ROWS
@@ -40,7 +41,6 @@ class Grid:
 
     def __hash__(self):
         """hashable 化するための __hash__ 定義
-
         - set() で利用するため
         """
         return hash(''.join(str(x) for row in self._values for x in row))
