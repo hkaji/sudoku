@@ -1,6 +1,8 @@
 #
 # python 3.7以上で動く
-# 
+#  元はこちら
+# https://www.lifewithpython.com/2020/02/python-sudoku-solver.html
+#
 from __future__ import annotations
 from pprint import pformat
 from typing import List, Set, Tuple
